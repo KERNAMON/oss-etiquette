@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+
+# .gitignore file tells Git which files or directories to ignore in a repository.
+
+# .DS_Store (Desktop Services Store) is a hidden file created by macOS in directories to store metadata about how files are displayed in Finder, such as Icon positions, Window size, View style (grid, list or column)
+# .DS_Store is automatically updated by macOS, leading to frequent unwanted changes, which can create unnecessary noise in commits, pull requests and diffs. These files are irrelevant to other developers or collaborators, especially if they’re not using macOS.
+
+# node_modules/ is a directory that acumulate 1000s of files and usually contains dependencies installed via a package manager like npm or yarn in JavaScript/Node.js projects.
+# node_modules/ contents are automatically generated based on the package.json and package-lock.json (or yarn.lock) files. These lock files record the exact version of each dependency, so there is no need to store the actual libraries in Git.
+# By ignoring node_modules/ you ensure that contributors can install the exact same dependencies on their machines by running npm install or yarn install, which will recreate the node_modules folder.
+
+# *.log includes any file with the .log extension, which is often used for logging runtime information (errors, debug info).
+# Log files are usually generated dynamically during application runtime (error logs, server logs) and they do not need to be version-controlled. These files can change frequently and are specific to the environment in which the application is running.
+# Log files may contain sensitive information such as passwords, tokens, or other private data that shouldn’t be shared in a public repository.
+# Versioning log files creates unnecessary noise in the repository’s commit history and can lead to performance issues, since log files can grow large over time.
